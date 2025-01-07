@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company logo">
+                <img src="./Assets/logo.png" alt="Company logo">
+            </a>
+            <div class="nav-links flex">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="Sports" onclick="onNavItemClick('Sports')">Sports</li>
+                    <li class="hover-link nav-item" id="Business" onclick="onNavItemClick('Business')">Business</li>
+                    <li class="hover-link nav-item" id="tech" onclick="onNavItemClick('tech')">Tech</li>
+                    <li class="hover-link nav-item" id="Research" onclick="onNavItemClick('Research')">Research</li>
+                    <li class="hover-link nav-item" id="Ai" onclick="onNavItemClick('Ai')">AI</li>
+                    <li class="hover-link nav-item" id="World" onclick="onNavItemClick('World')">World</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="Search News">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Welcome to News App, your go-to platform for staying informed with the latest news and stories from around the world. Our mission is to deliver accurate, timely, and unbiased news across various categories, including politics, technology, entertainment, sports, and more. <hr> <br>
+                     At News App, we believe that information empowers individuals and communities. We strive to provide a seamless and engaging user experience, enabling you to explore news effortlessly and stay connected to the events shaping our world.</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fas fa-newspaper"></i></a></li>
+                    <li><a href="https://discord.com/"><i class="fab fa-discord"></i></a></li>
+                    <li><a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://x.com/"><i class="fa-brands fa-square-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="sec contactBx">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class='bx bxs-map'></i></span>
+                        <span>64-A Mumbai street, India<br>Civil lines 33445<br>Mumbai</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-envelope'></i></span>
+                        <p><a href="mailto:Newsapp91@gmail.com">Newsapp91@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
