@@ -16,3 +16,6 @@ This repository contains the code for a simple news application that fetches and
 * CSS
 * JavaScript (including Fetch API)
 * News API
+
+
+  demo link - http://127.0.0.1:5500/index.htm
